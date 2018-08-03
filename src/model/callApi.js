@@ -1,11 +1,15 @@
 import { POSTS_URL, USERS_URL } from "../constants/api";
+import fetch from 'isomorphic-fetch';
 
 const callApi = (url, cb) => {
   fetch(url)
     .then(res => res.json())
     .then(
       (result) => cb(result),
-      (err) => console.log(err)
+      (err) => {
+        cb(err);
+        console.log(err)
+      }
     )
 }
 
