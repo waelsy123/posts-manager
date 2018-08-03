@@ -1,6 +1,7 @@
 import { getAllPosts } from "../../model/callApi";
 import React, { Component } from 'react';
 import { ROUTE_TO_POSTS } from '../../constants/routes';
+import './Homepage.css';
 
 class Homepage extends Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class Homepage extends Component {
     return (
       <div>
         {this.state.posts.map(post => (
-          <p key={post.id} className="App-intro" onClick={this.handleViewPost(post.id)}>
+          <p key={post.id} className="post-row" onClick={this.handleViewPost(post.id)}>
             {post.title}
           </p>
         ))}

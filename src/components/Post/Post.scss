@@ -1,0 +1,19 @@
+.post {
+  text-align: left;
+  padding: 30px;
+  
+  .post-title {
+    font-size: 30px;
+    font-style: bold;
+  }
+  .post-author {
+    font-style: italic;
+    color: darkslategrey;
+    padding: 20px;
+  }
+  .post-description {
+    border: 1px solid;
+    border-radius: 12px;
+    padding: 20px;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getPost, getUser } from '../../model/callApi';
+import './Post.css';
 
 class Post extends Component {
   constructor(props) {
